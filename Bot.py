@@ -1,8 +1,9 @@
+import os
 import discord
 from discord.ext import commands
 
 # ========== CONFIG ==========
-TOKEN = "MTI2NDc1MjMxNjk4NTExNDc2Ng.GOAz7m.mXKeuulcBCAj3K506GS2yNAyc76H56F1OSBxW4"
+TOKEN = os.getenv("BOT_TOKEN")
 GUILD_ID = 1245473746429415494
 MARKET_CHANNEL_NAME = "memes"
 # ============================
@@ -78,3 +79,4 @@ async def on_message(message):
     await bot.process_commands(message)
 
 bot.run(TOKEN)
+
