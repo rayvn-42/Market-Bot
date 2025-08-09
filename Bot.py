@@ -5,7 +5,7 @@ from discord.ext import commands
 # ========== CONFIG ==========
 TOKEN = os.getenv("BOT_TOKEN")
 GUILD_ID = 1245473746429415494
-MARKET_CHANNEL_NAME = "memes"
+MARKET_CHANNEL_NAME = "↝『🛍』-𝐌𝐚𝐫𝐤𝐞𝐭"
 # ============================
 
 intents = discord.Intents.default()
@@ -79,4 +79,5 @@ async def on_message(message):
     await bot.process_commands(message)
 
 bot.run(TOKEN)
+
 
